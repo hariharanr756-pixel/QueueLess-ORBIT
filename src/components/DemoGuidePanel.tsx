@@ -108,7 +108,7 @@ export function DemoGuidePanel({ open, onClose }: DemoGuidePanelProps) {
       <div className="flex h-full w-full max-w-md flex-col border-l border-indigo-500/25 bg-[#070B1E] shadow-2xl">
         <div className="flex items-center justify-between border-b border-indigo-500/20 px-5 py-4">
           <div>
-            <div className="text-xs font-semibold text-cyan-300">HACKARAVA 3-Minute Demo Script</div>
+            <div className="text-xs font-semibold text-cyan-300">ORBIT 3-Minute Demo Script</div>
             <h2 className="font-display text-lg font-bold text-white">
               Guided Live Workflow ({completedCount}/8)
             </h2>

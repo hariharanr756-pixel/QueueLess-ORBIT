@@ -583,7 +583,7 @@ async function startServer() {
 
   app.post('/api/demo/reset', requireAuth, (req: AuthedRequest, res) => {
     const snapshot = hospitalStore.resetDemoData(req.user!.name);
-    broadcastState('demo:reset', 'HACKARAVA Demo Data reset to initial 24-patient baseline', snapshot);
+    broadcastState('demo:reset', 'Demo Data reset to initial 24-patient baseline', snapshot);
     res.json({ snapshot });
   });
 

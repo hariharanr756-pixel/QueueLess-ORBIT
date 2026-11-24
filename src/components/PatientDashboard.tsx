@@ -191,7 +191,7 @@ export function PatientDashboard() {
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
           <div className="text-xs text-slate-400">
-            Patient Queue Portal · {user.isDemo ? 'Simulated HACKARAVA Demo Record' : 'Live Session'}
+            Patient Queue Portal · {user.isDemo ? 'Simulated Demo Record' : 'Live Session'}
           </div>
           <h1 className="font-display text-2xl sm:text-3xl font-bold text-white mt-0.5">
             Welcome, {user.name}

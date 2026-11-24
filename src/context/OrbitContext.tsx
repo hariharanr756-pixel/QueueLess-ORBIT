@@ -135,7 +135,7 @@ export function OrbitProvider({ children }: { children: React.ReactNode }) {
           })),
       });
 
-      // Automatically detect HACKARAVA 3-minute demo milestones
+      // Automatically detect 3-minute demo milestones
       const anyDocOffline = snap.doctors.some(
         (d) => d.availability === 'Unavailable' || d.availability === 'On Break'
       );
@@ -311,7 +311,7 @@ export function OrbitProvider({ children }: { children: React.ReactNode }) {
       if (user?.role === 'admin') {
         setDemoProgress((prev) => ({ ...prev, openedAdmin: true, inspectedPredictions: true }));
       }
-      applySnapshot(fresh, 'HACKARAVA Demo Data restored (24 patients · 3 doctors · 4 counters)');
+      applySnapshot(fresh, 'Demo Data restored (24 patients · 3 doctors · 4 counters)');
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Unable to reset demo data.');
     } finally {

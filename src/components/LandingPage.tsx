@@ -6,7 +6,6 @@ import {
   BarChart3,
   BrainCircuit,
   CheckCircle2,
-  Cpu,
   LayoutGrid,
   Layers,
   Menu,
@@ -15,7 +14,6 @@ import {
   Stethoscope,
   User,
   UserCheck,
-  Users,
   X,
 } from 'lucide-react';
 import { useOrbit } from '../context/OrbitContext.tsx';
@@ -229,7 +227,6 @@ export function LandingPage() {
               ['#how-it-works', 'How It Works'],
               ['#intelligence', 'Intelligence'],
               ['#solutions', 'Solutions'],
-              ['#about', 'About'],
               ['#contact', 'Contact'],
             ].map(([href, label]) => {
               const isActive = activeNav === href;
@@ -292,7 +289,6 @@ export function LandingPage() {
                 ['How It Works', '#how-it-works'],
                 ['Intelligence', '#intelligence'],
                 ['Solutions', '#solutions'],
-                ['About', '#about'],
                 ['Contact', '#contact'],
               ].map(([label, href]) => (
                 <a
@@ -772,81 +768,12 @@ export function LandingPage() {
         </div>
       </section>
 
-      {/* About & Honest Engineering Architecture */}
-      <section id="about" className="border-t border-indigo-500/20 bg-[#070B1C] py-16 sm:py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
-            <div className="lg:col-span-5">
-              <p className="text-xs font-semibold tracking-[0.16em] text-violet-300">
-                About QueueLess ORBIT
-              </p>
-              <h2 className="mt-3 font-display text-3xl font-bold text-white">
-                Built for HACKARAVA with clinical safety and engineering honesty.
-              </h2>
-              <p className="mt-4 text-slate-300 leading-relaxed">
-                QueueLess ORBIT distinguishes simulated demo workflows from external hospital
-                integrations. Out of the box, wait-time ranges are powered by an explainable
-                deterministic queueing engine while preserving clean adapter boundaries for a
-                Python FastAPI + trained Random Forest service and Supabase/PostgreSQL storage.
-              </p>
-            </div>
-
-            <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5">
-              <div className="orbit-glass rounded-2xl p-6">
-                <Cpu className="h-5 w-5 text-cyan-300" />
-                <h3 className="mt-3 font-display font-semibold text-white">
-                  Explainable Deterministic Baseline
-                </h3>
-                <p className="mt-2 text-sm text-slate-300 leading-relaxed">
-                  Transparent queue formulas compute lower/upper bounds and factor impacts today.
-                  Typed FastAPI Random Forest adapter ready when historical hospital training data
-                  is connected.
-                </p>
-              </div>
-              <div className="orbit-glass rounded-2xl p-6">
-                <ShieldCheck className="h-5 w-5 text-violet-300" />
-                <h3 className="mt-3 font-display font-semibold text-white">
-                  Clinician-Controlled Safety
-                </h3>
-                <p className="mt-2 text-sm text-slate-300 leading-relaxed">
-                  AI never autonomously assigns clinical urgency. Priority placement requires an
-                  authenticated staff or clinician authorization record stored in the audit trail.
-                </p>
-              </div>
-              <div className="orbit-glass rounded-2xl p-6">
-                <Layers className="h-5 w-5 text-blue-300" />
-                <h3 className="mt-3 font-display font-semibold text-white">
-                  Real-Time WebSocket Coordination
-                </h3>
-                <p className="mt-2 text-sm text-slate-300 leading-relaxed">
-                  Patient, Staff, and Administrator workspaces synchronize immediately over
-                  server-authoritative WebSockets whenever doctors, counters, or queues change.
-                </p>
-              </div>
-              <div className="orbit-glass rounded-2xl p-6">
-                <Users className="h-5 w-5 text-emerald-300" />
-                <h3 className="mt-3 font-display font-semibold text-white">
-                  3-Minute Guided HACKARAVA Demo
-                </h3>
-                <p className="mt-2 text-sm text-slate-300 leading-relaxed">
-                  Includes 24 fictional patients, 3 clinicians, 4 counters, and an interactive
-                  8-step demo checklist to walk judges through live operational coordination.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Contact Section */}
-      <section id="contact" className="border-t border-indigo-500/20 bg-[#050712] py-16 sm:py-20">
+      <section id="contact" className="border-t border-indigo-500/20 bg-[#070B1C] py-16 sm:py-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="orbit-glass rounded-2xl p-7 sm:p-10">
             <div className="max-w-xl">
-              <p className="text-xs font-semibold tracking-[0.16em] text-cyan-300">
-                Hospital Pilot & Hackathon Inquiries
-              </p>
-              <h2 className="mt-2 font-display text-2xl sm:text-3xl font-bold text-white">
+              <h2 className="font-display text-2xl sm:text-3xl font-bold text-white">
                 Contact the QueueLess ORBIT team
               </h2>
               <p className="mt-2 text-sm text-slate-300">

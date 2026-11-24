@@ -113,10 +113,10 @@ export function AuthView() {
 
       <main className="mx-auto flex w-full max-w-6xl flex-1 items-center px-4 sm:px-6 lg:px-8 py-10">
         <div className="grid w-full grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          {/* Left: Instant HACKARAVA Demo Mode Launcher */}
+          {/* Left: Instant Demo Mode Launcher */}
           <div className="lg:col-span-6 orbit-glass rounded-2xl border border-cyan-400/25 p-6 sm:p-8">
             <div className="text-xs font-semibold text-cyan-300">
-              Instant HACKARAVA Demo Mode · Fictional Records
+              Instant Demo Mode · Fictional Records
             </div>
             <h1 className="mt-2 font-display text-2xl sm:text-3xl font-bold text-white">
               Enter any role dashboard in one click

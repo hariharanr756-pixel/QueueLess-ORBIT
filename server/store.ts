@@ -37,7 +37,7 @@ function todayDateStr(): string {
 /**
  * Replaceable Hospital Data Layer.
  * Implements PostgreSQL/Firestore-ready entity collections in memory for
- * zero-friction HACKARAVA demo & real-time WebSocket synchronization.
+ * zero-friction interactive demo & real-time WebSocket synchronization.
  */
 export class HospitalStore {
   private departments: Department[] = [];
@@ -181,7 +181,7 @@ export class HospitalStore {
       },
     ];
 
-    // Core HACKARAVA Demo Setup: 3 Doctors (cross-covering clinics; Admin can add more)
+    // Core Demo Setup: 3 Doctors (cross-covering clinics; Admin can add more)
     this.doctors = [
       {
         id: 'doc-01',
@@ -221,7 +221,7 @@ export class HospitalStore {
       },
     ];
 
-    // Core HACKARAVA Demo Setup: 4 Counters (3 Open, Counter 4 Standby Ready to Open)
+    // Core Demo Setup: 4 Counters (3 Open, Counter 4 Standby Ready to Open)
     this.counters = [
       {
         id: 'cnt-01',
@@ -467,7 +467,7 @@ export class HospitalStore {
       {
         id: 'ntf-init-2',
         targetRole: 'admin',
-        title: 'HACKARAVA Demo Mode Active',
+        title: 'Interactive Demo Mode Active',
         message:
           'Loaded 24 simulated patients, 3 active doctors, and 4 counters (Counter 4 on standby). All predictions use the explainable deterministic baseline.',
         category: 'counter',
@@ -509,7 +509,7 @@ export class HospitalStore {
         whatChanged: 'Calculated lower/upper wait-time ranges for 15 active waiting & called tokens across 6 departments.',
         why: 'Deterministic baseline initialized with 3 active clinicians, 3 open counters, and 1 standby counter.',
         contributingFactors: [
-          '24 fictional HACKARAVA demo records loaded',
+          '24 fictional demo records loaded',
           'Historical department service times (10–15 min)',
           'Counter 4 currently on standby',
         ],

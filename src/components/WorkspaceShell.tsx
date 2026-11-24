@@ -150,7 +150,7 @@ export function WorkspaceShell() {
             })}
           </nav>
 
-          {/* Instant Role Switcher for Synchronized HACKARAVA Demo */}
+          {/* Instant Role Switcher for Synchronized Demo */}
           <div className="rounded-xl border border-indigo-400/20 bg-[#0A1026]/80 p-3.5 space-y-2.5">
             <div className="text-[11px] font-medium text-slate-400">
               Switch Demo Role (Live Sync)
@@ -193,7 +193,7 @@ export function WorkspaceShell() {
               <span className="font-mono-num">{completedDemoSteps}/8</span>
             </div>
             <p className="mt-1 text-[11px] text-slate-400">
-              Step-by-step HACKARAVA walkthrough & baseline reset
+              Step-by-step interactive walkthrough & baseline reset
             </p>
           </button>
         </div>
@@ -428,7 +428,7 @@ export function WorkspaceShell() {
         </main>
       </div>
 
-      {/* Interactive 3-Minute HACKARAVA Demo Guide Drawer */}
+      {/* Interactive 3-Minute Demo Guide Drawer */}
       <DemoGuidePanel open={demoGuideOpen} onClose={() => setDemoGuideOpen(false)} />
     </div>
   );

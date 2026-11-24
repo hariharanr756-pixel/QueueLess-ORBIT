@@ -486,7 +486,7 @@ export function AdminDashboard() {
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <div>
           <div className="text-xs text-slate-400">
-            Administrator Command Center · Simulated HACKARAVA Demo Data · Deterministic Baseline v1
+            Administrator Command Center · Simulated Demo Data · Deterministic Baseline v1
           </div>
           <h1 className="font-display text-2xl sm:text-3xl font-bold text-white mt-0.5">
             Hospital Operations Overview
