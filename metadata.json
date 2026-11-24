@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix QueueLess ORBIT",
+  "description": "An AI-powered healthcare platform that intelligently predicts waiting times and orchestrates patient flow for modern medical facilities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
